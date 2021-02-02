@@ -10,10 +10,10 @@ Outcome - we have been able to search for the 1-5 meta-metalayer deep architectu
 The examples of the found architectures can be found in PDF files /notebooks/4_DARTS/:
 
  - Found 1-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/1_layer.pdf" target="_blank">1_layer.pdf</a>
- - Found 2-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/2_layer.pdf" target="_blank">2_layer.pdf</a>
- - Found 3-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/3_layer.pdf" target="_blank">3_layer.pdf</a>
- - Found 4-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/4_layer.pdf" target="_blank">4_layer.pdf</a>
- - Found 5-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/5_layer.pdf" target="_blank">5_layer.pdf</a>
+ - Found 2-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/2_layers.pdf" target="_blank">2_layer.pdf</a>
+ - Found 3-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/3_layers.pdf" target="_blank">3_layer.pdf</a>
+ - Found 4-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/4_layers.pdf" target="_blank">4_layer.pdf</a>
+ - Found 5-meta-layer architecture: <a href="https://github.com/andreybond/skin_cancer_nas/tree/main/notebooks/4_DARTS/5_layers.pdf" target="_blank">5_layer.pdf</a>
 
 Project Organization (Cookiecutter template)
 ------------
