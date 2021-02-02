@@ -1,0 +1,51 @@
+version: '2.3'
+services:
+  notebook-server-skin-nas:
+    build: .
+    runtime: nvidia
+    shm_size: '32gb'
+    ports: # HOST:CONTAINER
+    - "0.0.0.0:8885:8888"
+    - "0.0.0.0:8085:8080"
+    - "0.0.0.0:6065:6060"
+      #- "0.0.0.0:8081:8881" 
+    - "0.0.0.0:6005:6006"
+    environment:
+       #- NVIDIA_VISIBLE_DEVICES=1
+       - MONGODB_HOST=mongo
+       - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+       - ./:/mnt:rw
+    entrypoint: bash -c "cd /mnt && jupyter notebook --NotebookApp.token='' --ip=0.0.0.0 --allow-root && /bin/bash" 
+    #entrypoint: bash -c "cd /mnt && /bin/bash" 
+    stdin_open: true
+    tty: true
+    #networks:
+    #   - docker_sacredboard_default
+      # ports:
+      #   - "0.0.0.0:8888:8888"
+#      volumes:
+#        - /home/scalr/twino_forms/data:/data:rw
+#        - /home/scalr/twino_forms/notebooks:/notebooks:rw
+#        - /home/scalr/twino_forms/twino_forms:/twino_forms:rw
+networks:
+  default:
+    external:
+      name: docker_sacredboard_default
+
+#version: '2.3'
+#services:
+#   notebook-server:
+#      build: .
+#      runtime: nvidia
+#      environment:
+#         - NVIDIA_VISIBLE_DEVICES=all
+#      ports:
+#         - "0.0.0.0:8888:8888"
+#      volumes:
+#         - ./:/mnt
+#      entrypoint: bash -c "cd /mnt && jupyter notebook --NotebookApp.token='' --ip=0.0.0.0 --allow-root && /bin/bash" 
+#      entrypoint: #bash 
+#      stdin_open: true
+#            tty: true
+

@@ -1,0 +1,2 @@
+This folder contains original code from NNI examples repository.
+Sibling folder proxylessnas_nni_melanoma contains changes. (main.py file is adjusted, other files are added, like custom trainer (original relied on top5 acc.))
